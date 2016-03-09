@@ -1,0 +1,513 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Final-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "jeu. 02 avril 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_15 P1
+U 1 1 551D9496
+P 5000 3125
+F 0 "P1" V 4970 3175 60  0000 C CNN
+F 1 "Digital" V 5080 3175 60  0000 C CNN
+F 2 "Socket_Arduino_Nano:Socket_Strip_Arduino_1x15" H 5000 3175 60  0001 C CNN
+F 3 "" H 5000 3175 60  0000 C CNN
+	1    5000 3125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_15 P2
+U 1 1 551D94EF
+P 5000 2750
+F 0 "P2" V 4970 2800 60  0000 C CNN
+F 1 "Analog" V 5080 2800 60  0000 C CNN
+F 2 "Socket_Arduino_Nano:Socket_Strip_Arduino_1x15" H 5000 2800 60  0001 C CNN
+F 3 "" H 5000 2800 60  0000 C CNN
+	1    5000 2750
+	0    -1   1    0   
+$EndComp
+Text Label 4300 4175 1    60   ~ 0
+1(Tx)
+Text Label 4400 4175 1    60   ~ 0
+0(Rx)
+$Comp
+L GND #PWR01
+U 1 1 551D979C
+P 5875 3550
+F 0 "#PWR01" H 5875 3550 30  0001 C CNN
+F 1 "GND" H 5875 3480 30  0001 C CNN
+F 2 "" H 5875 3550 60  0000 C CNN
+F 3 "" H 5875 3550 60  0000 C CNN
+	1    5875 3550
+	0    -1   -1   0   
+$EndComp
+Text Label 4500 4175 1    60   ~ 0
+Reset
+Text Label 4700 4175 1    60   ~ 0
+2
+Text Label 4800 4175 1    60   ~ 0
+3(**)
+Text Label 4900 4175 1    60   ~ 0
+4
+Text Label 5000 4175 1    60   ~ 0
+5(**)
+Text Label 5100 4175 1    60   ~ 0
+6(**)
+Text Label 5200 4175 1    60   ~ 0
+7
+Text Label 5300 4175 1    60   ~ 0
+8
+Text Label 5400 4175 1    60   ~ 0
+9(**)
+Text Label 5500 4175 1    60   ~ 0
+10(**/SS)
+Text Label 5600 4175 1    60   ~ 0
+11(**/MISO)
+Text Label 5700 4175 1    60   ~ 0
+12(MOSI)
+Text Label 5700 2000 1    60   ~ 0
+13(SCK)
+Text Label 5400 2000 1    60   ~ 0
+A0
+Text Label 5300 2000 1    60   ~ 0
+A1
+Text Label 5200 2000 1    60   ~ 0
+A2
+Text Label 5100 2000 1    60   ~ 0
+A3
+Text Label 5000 2000 1    60   ~ 0
+A4
+Text Label 4900 2000 1    60   ~ 0
+A5
+Text Label 4800 2000 1    60   ~ 0
+A6
+Text Label 4700 2000 1    60   ~ 0
+A7
+$Comp
+L +3.3V #PWR02
+U 1 1 551D9E93
+P 4125 2075
+F 0 "#PWR02" H 4125 2035 30  0001 C CNN
+F 1 "+3.3V" H 4125 2185 30  0000 C CNN
+F 2 "" H 4125 2075 60  0000 C CNN
+F 3 "" H 4125 2075 60  0000 C CNN
+	1    4125 2075
+	0    -1   -1   0   
+$EndComp
+Text Label 5500 2000 1    60   ~ 0
+AREF
+$Comp
+L +5V #PWR03
+U 1 1 551D9FBD
+P 4125 2200
+F 0 "#PWR03" H 4125 2290 20  0001 C CNN
+F 1 "+5V" H 4125 2290 30  0000 C CNN
+F 2 "" H 4125 2200 60  0000 C CNN
+F 3 "" H 4125 2200 60  0000 C CNN
+	1    4125 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 551D9FD7
+P 5875 2325
+F 0 "#PWR04" H 5875 2325 30  0001 C CNN
+F 1 "GND" H 5875 2255 30  0001 C CNN
+F 2 "" H 5875 2325 60  0000 C CNN
+F 3 "" H 5875 2325 60  0000 C CNN
+	1    5875 2325
+	0    -1   -1   0   
+$EndComp
+Text Label 4500 2000 1    60   ~ 0
+Reset
+Text Label 4125 2325 2    60   ~ 0
+Vin
+$Comp
+L ELD-426x AFF1
+U 1 1 56DC033C
+P 5000 6500
+F 0 "AFF1" H 4650 6000 50  0000 C CNN
+F 1 "ELD-426x" H 5300 6000 50  0000 C CNN
+F 2 "Displays_7-Segment:ELD-426x" H 5000 6500 50  0001 C CNN
+F 3 "" H 5000 6500 50  0000 C CNN
+	1    5000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC557 Q2
+U 1 1 56DC046A
+P 7100 4600
+F 0 "Q2" H 7300 4675 50  0000 L CNN
+F 1 "EN3906" H 7300 4600 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 7300 4525 50  0000 L CIN
+F 3 "" H 7100 4600 50  0000 L CNN
+	1    7100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC557 Q1
+U 1 1 56DC04E7
+P 3400 5600
+F 0 "Q1" H 3600 5675 50  0000 L CNN
+F 1 "EN3906" H 3600 5600 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3600 5525 50  0000 L CIN
+F 3 "" H 3400 5600 50  0000 L CNN
+	1    3400 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 56DC0530
+P 2900 4300
+F 0 "SW1" H 3050 4410 50  0000 C CNN
+F 1 "SW_PUSH" H 2900 4220 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_EVQPE1" H 2900 4300 50  0001 C CNN
+F 3 "" H 2900 4300 50  0000 C CNN
+	1    2900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 56DC06A1
+P 4800 5450
+F 0 "R3" V 4880 5450 50  0001 C CNN
+F 1 "100" V 4800 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4730 5450 50  0001 C CNN
+F 3 "" H 4800 5450 50  0000 C CNN
+	1    4800 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 56DC0786
+P 4900 5450
+F 0 "R4" V 4980 5450 50  0001 C CNN
+F 1 "100" V 4900 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4830 5450 50  0001 C CNN
+F 3 "" H 4900 5450 50  0000 C CNN
+	1    4900 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 56DC07A4
+P 5000 5450
+F 0 "R5" V 5080 5450 50  0001 C CNN
+F 1 "100" V 5000 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4930 5450 50  0001 C CNN
+F 3 "" H 5000 5450 50  0000 C CNN
+	1    5000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 56DC07AA
+P 5100 5450
+F 0 "R6" V 5180 5450 50  0001 C CNN
+F 1 "100" V 5100 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5030 5450 50  0001 C CNN
+F 3 "" H 5100 5450 50  0000 C CNN
+	1    5100 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 56DC07BC
+P 5200 5450
+F 0 "R7" V 5280 5450 50  0001 C CNN
+F 1 "100" V 5200 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5130 5450 50  0001 C CNN
+F 3 "" H 5200 5450 50  0000 C CNN
+	1    5200 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 56DC07C2
+P 5300 5450
+F 0 "R8" V 5380 5450 50  0001 C CNN
+F 1 "100" V 5300 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5230 5450 50  0001 C CNN
+F 3 "" H 5300 5450 50  0000 C CNN
+	1    5300 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 56DC07C8
+P 5400 5450
+F 0 "R9" V 5480 5450 50  0001 C CNN
+F 1 "100" V 5400 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5330 5450 50  0001 C CNN
+F 3 "" H 5400 5450 50  0000 C CNN
+	1    5400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 56DC07CE
+P 6650 4600
+F 0 "R10" V 6730 4600 50  0001 C CNN
+F 1 "100" V 6650 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6580 4600 50  0001 C CNN
+F 3 "" H 6650 4600 50  0000 C CNN
+	1    6650 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 56DC07F6
+P 3850 5600
+F 0 "R2" V 3930 5600 50  0001 C CNN
+F 1 "100" V 3850 5600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3780 5600 50  0001 C CNN
+F 3 "" H 3850 5600 50  0000 C CNN
+	1    3850 5600
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 56DC0804
+P 2400 4050
+F 0 "R1" V 2480 4050 50  0001 C CNN
+F 1 "1KOhm" V 2400 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2330 4050 50  0001 C CNN
+F 3 "" H 2400 4050 50  0000 C CNN
+	1    2400 4050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4550 5750
+NoConn ~ 4300 4200
+NoConn ~ 4400 4200
+NoConn ~ 4500 4200
+Wire Wire Line
+	5700 3475 5700 5100
+Wire Wire Line
+	5600 3475 5600 5000
+Wire Wire Line
+	5500 3475 5500 4900
+Wire Wire Line
+	5400 3475 5400 4600
+Wire Wire Line
+	5300 3475 5300 4800
+Wire Wire Line
+	5200 3475 5200 4700
+Wire Wire Line
+	5100 3475 5100 4600
+Wire Wire Line
+	5000 3475 5000 4300
+Wire Wire Line
+	4900 3475 4900 4400
+Wire Wire Line
+	4800 3475 4800 4500
+Wire Wire Line
+	4700 3475 4700 4500
+Wire Wire Line
+	4500 4200 4500 3475
+Wire Wire Line
+	4400 4200 4400 3475
+Wire Wire Line
+	4300 4200 4300 3475
+Wire Wire Line
+	4600 3550 5875 3550
+Wire Wire Line
+	4600 3475 4600 4300
+Wire Wire Line
+	4125 2325 4300 2325
+Wire Wire Line
+	4300 2325 4300 2400
+Wire Wire Line
+	5600 2400 5600 2075
+Wire Wire Line
+	4600 1000 4600 2400
+Wire Wire Line
+	4600 2200 4125 2200
+Wire Wire Line
+	5600 2075 4125 2075
+Wire Wire Line
+	4400 2325 5875 2325
+Wire Wire Line
+	4400 2325 4400 2400
+Wire Wire Line
+	4500 2400 4500 1625
+Wire Wire Line
+	4700 2400 4700 1625
+Wire Wire Line
+	4800 2400 4800 1625
+Wire Wire Line
+	4900 2400 4900 1625
+Wire Wire Line
+	5000 2400 5000 1625
+Wire Wire Line
+	5100 2400 5100 1625
+Wire Wire Line
+	5200 2400 5200 1625
+Wire Wire Line
+	5300 2400 5300 1625
+Wire Wire Line
+	5400 2400 5400 1625
+Wire Wire Line
+	5500 2400 5500 1625
+Wire Wire Line
+	5700 2400 5700 1625
+Wire Wire Line
+	6900 4600 6800 4600
+Wire Wire Line
+	3700 5600 3600 5600
+Wire Wire Line
+	4800 5750 4800 5600
+Wire Wire Line
+	4900 5750 4900 5600
+Wire Wire Line
+	5000 5750 5000 5600
+Wire Wire Line
+	5100 5750 5100 5600
+Wire Wire Line
+	5200 5750 5200 5600
+Wire Wire Line
+	5300 5750 5300 5600
+Wire Wire Line
+	5400 5750 5400 5600
+Wire Wire Line
+	4700 4500 2400 4500
+Wire Wire Line
+	2400 4500 2400 4200
+Wire Wire Line
+	2600 4300 2400 4300
+Connection ~ 2400 4300
+Wire Wire Line
+	4600 4300 3200 4300
+Connection ~ 4600 3550
+Wire Wire Line
+	4400 1000 4400 2350
+Connection ~ 4400 2350
+Wire Wire Line
+	5100 5300 5100 5100
+Wire Wire Line
+	5100 5100 5700 5100
+Wire Wire Line
+	5200 5300 5200 5000
+Wire Wire Line
+	5200 5000 5600 5000
+Wire Wire Line
+	5000 5300 5000 4900
+Wire Wire Line
+	5000 4900 5500 4900
+Wire Wire Line
+	5850 6600 7200 6600
+Wire Wire Line
+	7200 6600 7200 4800
+Wire Wire Line
+	5400 4600 6500 4600
+Wire Wire Line
+	4900 5300 4900 4800
+Wire Wire Line
+	4900 4800 5300 4800
+Wire Wire Line
+	4800 5300 4800 4700
+Wire Wire Line
+	4800 4700 5200 4700
+Wire Wire Line
+	5300 5300 5300 5200
+Wire Wire Line
+	5300 5200 4700 5200
+Wire Wire Line
+	4700 5200 4700 4600
+Wire Wire Line
+	4700 4600 5100 4600
+Wire Wire Line
+	5400 5300 6000 5300
+Wire Wire Line
+	6000 5300 6000 4300
+Wire Wire Line
+	6000 4300 5000 4300
+Wire Wire Line
+	4000 5600 4000 4400
+Wire Wire Line
+	4000 4400 4900 4400
+Wire Wire Line
+	3300 5800 3300 6450
+Wire Wire Line
+	3300 6450 4150 6450
+Wire Wire Line
+	4800 4500 6200 4500
+Wire Wire Line
+	6200 4500 6200 1200
+Wire Wire Line
+	6200 1200 4500 1200
+Wire Wire Line
+	4500 1200 4500 1000
+Connection ~ 4600 2200
+Wire Wire Line
+	2400 1100 7200 1100
+Wire Wire Line
+	2400 1100 2400 3900
+Connection ~ 4600 1100
+Wire Wire Line
+	7200 1100 7200 4400
+Wire Wire Line
+	3300 5400 2300 5400
+Wire Wire Line
+	2300 5400 2300 3600
+Wire Wire Line
+	2300 3600 2400 3600
+Connection ~ 2400 3600
+Text Label 4400 1450 0    60   ~ 0
+GND
+Text Label 4800 1100 0    60   ~ 0
+5V
+Text Label 6200 1700 0    60   ~ 0
+RELAY_COMMAND
+Text Notes 7500 6900 0    99   ~ 20
+Count Down Timer based on Arduino-Nano
+$Comp
+L CONN_01X03 P3
+U 1 1 56DC3C87
+P 4500 800
+F 0 "P3" H 4500 1000 50  0001 C CNN
+F 1 "REL_CONN" V 4600 800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4500 800 50  0001 C CNN
+F 3 "" H 4500 800 50  0000 C CNN
+	1    4500 800 
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
